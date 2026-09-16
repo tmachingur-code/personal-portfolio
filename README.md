@@ -42,15 +42,10 @@ student-blog/
 ├── contact.html
 ├── styles.css
 ```
+## Lets connect
+- GitHub: https://github.com/tmachingur-code
+- LinkedIn: https://linkedin.com/in/tsungi
 
-Author
-
-Tsungirirai Machingura
-Software Engineering Student
-
-GitHub: https://github.com/tmachingur-code
-LinkedIn: https://linkedin.com/in/tsungi
-
-Purpose
+## Purpose
 
 Created as part of my Software Engineering learning journey to practice building and structuring a responsive multi-page website using HTML and CSS.
