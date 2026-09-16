@@ -1,0 +1,1036 @@
+/* ==============================
+   1. RESET & BASE STYLES
+   ============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+
+/* ==============================
+   2. MAIN SITE LAYOUT
+   ============================== */
+
+.site-wrapper {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    min-height: 100vh;
+}
+
+
+/* ==============================
+   3. SIDEBAR
+   ============================== */
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 35px 20px;
+    background-color: #173b57;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+}
+
+.sidebar-profile {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.profile-image {
+    width: 85px;
+    height: 85px;
+
+    margin: 0 auto 15px;
+
+    object-fit: cover;
+    border-radius: 50%;
+
+    border: 3px solid #8fd3c7;
+}
+
+.sidebar-profile h1 {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+}
+
+.sidebar-profile p {
+    font-size: 0.85rem;
+    color: #d5e3eb;
+}
+
+
+/* Navigation */
+
+.sidebar-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.sidebar-nav a {
+    display: block;
+
+    padding: 11px 14px;
+
+    border-radius: 8px;
+
+    color: #eaf2f7;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+    background-color: #24516f;
+    color: white;
+    transform: translateX(4px);
+}
+
+.sidebar-nav a.active {
+    background-color: #8fd3c7;
+    color: #173b57;
+    font-weight: bold;
+}
+
+.sidebar-nav a:focus {
+    outline: 2px solid #e58f65;
+    outline-offset: 2px;
+}
+
+
+/* Social links */
+
+.sidebar-social {
+    margin-top: auto;
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-social p {
+    font-size: 0.8rem;
+    color: #b9ccd7;
+    margin-bottom: 10px;
+}
+
+.sidebar-social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.sidebar-social-links a {
+    font-size: 0.9rem;
+    color: #eaf2f7;
+
+    transition: color 0.3s ease;
+}
+
+.sidebar-social-links a:hover {
+    color: #8fd3c7;
+}
+
+
+/* ==============================
+   4. MAIN CONTENT
+   ============================== */
+
+.main-content {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 50px;
+}
+
+
+/* Page headings */
+
+.page-header {
+    margin-bottom: 35px;
+}
+
+.page-header h2 {
+    font-size: 2.3rem;
+    line-height: 1.2;
+
+    color: #173b57;
+
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    max-width: 720px;
+
+    color: #607d8b;
+}
+
+.eyebrow {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: #e58f65;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+
+/* ==============================
+   5. HERO SECTION
+   ============================== */
+
+.hero {
+    min-height: 500px;
+
+    padding: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #173b57;
+    color: white;
+
+    border-radius: 20px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    right: -80px;
+    top: -80px;
+
+    border-radius: 50%;
+
+    background-color: rgba(143, 211, 199, 0.12);
+}
+
+.hero h2 {
+    font-size: 3.2rem;
+    line-height: 1.15;
+
+    max-width: 760px;
+
+    margin-bottom: 20px;
+}
+
+.hero h2 span {
+    color: #8fd3c7;
+}
+
+.hero p {
+    max-width: 650px;
+
+    color: #d8e5eb;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==============================
+   6. BUTTONS
+   ============================== */
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.button {
+    display: inline-block;
+
+    padding: 11px 20px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.button-primary {
+    background-color: #8fd3c7;
+    color: #173b57;
+}
+
+.button-primary:hover {
+    background-color: white;
+    transform: translateY(-2px);
+}
+
+.button-secondary {
+    border: 2px solid #e58f65;
+    color: white;
+}
+
+.button-secondary:hover {
+    background-color: #e58f65;
+    transform: translateY(-2px);
+}
+
+
+/* ==============================
+   7. GENERAL CARDS
+   ============================== */
+
+.card,
+.highlight-card,
+.project-card,
+.blog-card,
+.certificate-card {
+    background-color: white;
+
+    border: 1px solid #e1e5ea;
+
+    box-shadow: 0 8px 25px rgba(23, 59, 87, 0.06);
+}
+
+.card {
+    padding: 30px;
+
+    border-radius: 14px;
+
+    margin-bottom: 25px;
+}
+
+.card h3 {
+    color: #173b57;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #607d8b;
+}
+
+
+/* ==============================
+   8. HOME HIGHLIGHTS
+   ============================== */
+
+.highlights {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 30px;
+}
+
+.highlight-card {
+    padding: 25px;
+
+    border-radius: 12px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 30px rgba(23, 59, 87, 0.1);
+}
+
+.highlight-card h3 {
+    color: #173b57;
+    margin-bottom: 8px;
+}
+
+.highlight-card p {
+    color: #607d8b;
+    font-size: 0.95rem;
+}
+
+
+/* ==============================
+   9. ABOUT PAGE
+   ============================== */
+
+.about-grid {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.about-profile-image {
+    width: 170px;
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    margin-bottom: 20px;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.info-list li {
+    padding: 14px 15px;
+
+    background-color: #f8fafc;
+
+    border-left: 4px solid #8fd3c7;
+
+    border-radius: 6px;
+}
+
+.info-list li strong {
+    color: #173b57;
+}
+
+
+/* ==============================
+   10. LEARNING TABLE
+   ============================== */
+
+.table-container {
+    overflow-x: auto;
+}
+
+.learning-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+}
+
+.learning-table th,
+.learning-table td {
+    padding: 14px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #e1e5ea;
+}
+
+.learning-table th {
+    background-color: #173b57;
+    color: white;
+}
+
+.learning-table tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.learning-table tbody tr:hover {
+    background-color: #eef6f5;
+}
+
+
+/* ==============================
+   11. PROJECTS
+   ============================== */
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.project-card {
+    padding: 30px;
+
+    border-radius: 14px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.project-card:nth-child(even) {
+    border-top: 4px solid #e58f65;
+}
+
+.project-card:nth-child(odd) {
+    border-top: 4px solid #8fd3c7;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(23, 59, 87, 0.12);
+}
+
+.project-card h3 {
+    color: #173b57;
+
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #607d8b;
+
+    margin-bottom: 18px;
+}
+
+
+/* Technology tags */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    padding: 5px 10px;
+
+    background-color: #eef6f5;
+    color: #24516f;
+
+    border-radius: 20px;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.project-card .read-more {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* ==============================
+   12. BLOG
+   ============================== */
+
+.blog-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.blog-card {
+    min-height: 260px;
+
+    padding: 28px;
+
+    border-radius: 14px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 30px rgba(23, 59, 87, 0.1);
+}
+
+.blog-date {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #e58f65;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.blog-card h3 {
+    color: #173b57;
+
+    line-height: 1.3;
+
+    margin-bottom: 12px;
+}
+
+.blog-card p {
+    color: #607d8b;
+
+    margin-bottom: 20px;
+}
+
+.read-more {
+    margin-top: auto;
+
+    color: #173b57;
+
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #e58f65;
+}
+
+
+/* ==============================
+   13. CERTIFICATIONS
+   ============================== */
+
+.certifications-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+.certificate-card {
+    padding: 15px;
+
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*
+   Keeps different certificate images
+   the same visual height.
+*/
+
+.certificate-card img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: contain;
+
+    background-color: #f8fafc;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+.certificate-card h3 {
+    color: #173b57;
+
+    font-size: 1rem;
+
+    margin-bottom: 5px;
+}
+
+.certificate-card p {
+    color: #607d8b;
+
+    font-size: 0.9rem;
+
+    margin-bottom: 15px;
+}
+
+.certificate-card .read-more {
+    margin-top: auto;
+}
+
+
+/* ==============================
+   14. CONTACT PAGE
+   ============================== */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1.5fr;
+
+    gap: 25px;
+
+    align-items: start;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.contact-item {
+    padding: 17px;
+
+    background-color: #f8fafc;
+
+    border-radius: 8px;
+}
+
+.contact-item strong {
+    display: block;
+
+    color: #173b57;
+
+    margin-bottom: 4px;
+}
+
+.contact-item a {
+    color: #607d8b;
+
+    word-break: break-word;
+}
+
+.contact-item a:hover {
+    color: #e58f65;
+}
+
+
+/* Contact form */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.form-group label {
+    color: #173b57;
+
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d5dce2;
+
+    border-radius: 8px;
+
+    font: inherit;
+
+    background-color: white;
+}
+
+.form-group textarea {
+    min-height: 150px;
+
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+
+    border-color: #8fd3c7;
+
+    box-shadow: 0 0 0 3px rgba(143, 211, 199, 0.2);
+}
+
+.contact-form button {
+    border: none;
+
+    cursor: pointer;
+
+    font: inherit;
+}
+
+
+/* ==============================
+   15. FOOTER
+   ============================== */
+
+.footer {
+    margin-top: 50px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #e1e5ea;
+
+    color: #607d8b;
+    
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #e58f65;
+}
+
+.footer p {
+    text-align: center;
+}
+
+
+/* ==============================
+   16. TABLET
+   ============================== */
+
+@media (max-width: 1000px) {
+
+    .site-wrapper {
+        grid-template-columns: 210px minmax(0, 1fr);
+    }
+
+    .main-content {
+        padding: 35px;
+    }
+
+    .hero {
+        padding: 45px;
+    }
+
+    .hero h2 {
+        font-size: 2.6rem;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ==============================
+   17. MOBILE
+   ============================== */
+
+@media (max-width: 700px) {
+
+    .site-wrapper {
+        display: block;
+    }
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+        height: auto;
+
+        padding: 25px 20px;
+    }
+
+    .sidebar-profile {
+        margin-bottom: 22px;
+    }
+
+    .profile-image {
+        width: 75px;
+        height: 75px;
+    }
+
+    .sidebar-nav ul {
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 6px;
+    }
+
+    .sidebar-nav a {
+        padding: 9px 11px;
+
+        font-size: 0.85rem;
+    }
+
+    .sidebar-social {
+        margin-top: 22px;
+
+        padding-top: 18px;
+    }
+
+    .sidebar-social-links {
+        justify-content: center;
+    }
+
+    .main-content {
+        padding: 30px 20px;
+    }
+
+    .page-header {
+        margin-bottom: 28px;
+    }
+
+    .page-header h2 {
+        font-size: 2rem;
+    }
+
+    .hero {
+        min-height: 420px;
+
+        padding: 35px 25px;
+
+        border-radius: 14px;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .projects-grid,
+    .blog-grid,
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-card img {
+        height: 240px;
+    }
+}
+
+
+/* ==============================
+   18. SMALL PHONES
+   ============================== */
+
+@media (max-width: 450px) {
+
+    .main-content {
+        padding: 22px 15px;
+    }
+
+    .sidebar {
+        padding: 22px 15px;
+    }
+
+    .hero {
+        min-height: 400px;
+
+        padding: 30px 20px;
+
+        border-radius: 12px;
+    }
+
+    .hero h2 {
+        font-size: 1.9rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .card,
+    .project-card,
+    .blog-card {
+        padding: 22px;
+    }
+
+    .page-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .learning-table th,
+    .learning-table td {
+        padding: 10px;
+
+        font-size: 0.9rem;
+    }
+}
