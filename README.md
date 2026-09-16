@@ -34,13 +34,14 @@ The website showcases my background, projects, learning journey, certifications,
 ## Project Structure
 
 ```text
-student-blog/
+personal-portfolio/
 ├── index.html
 ├── about.html
 ├── projects.html
 ├── blog.html
 ├── contact.html
 ├── styles.css
+├── README.md
 ```
 ## Lets connect
 - GitHub: https://github.com/tmachingur-code
