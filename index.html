@@ -1,88 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta
+        name="description"
+        content="Portfolio of Tsungirirai Machingura, a Software Engineering student exploring software development, AI, data and technology for real-world impact."
+    >
+
     <title>Home | Tsungirirai Machingura</title>
 
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <div class="site-wrapper">
-
-        <!-- ==============================
-             SIDEBAR
-             ============================== -->
-
-        <aside class="sidebar">
-
-            <div class="sidebar-profile">
-
-                <img
-                    src="my-pic.png"
-                    alt="Portrait of Tsungirirai Machingura"
-                    class="profile-image"
-                >
-
-                <h1>Tsungirirai Machingura</h1>
-
-                <p>Software Engineering Student</p>
-
-            </div>
+    <a class="skip-link" href="#main-content">
+        Skip to content
+    </a>
 
 
-            <!-- Navigation -->
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
 
-            <nav class="sidebar-nav" aria-label="Main navigation">
+    <header class="site-header">
 
-                <ul>
+        <div class="nav-container">
 
-                    <li>
-                        <a href="index.html" class="active">
-                            Home
-                        </a>
-                    </li>
+            <a class="brand" href="index.html">
+                Tsungirirai Machingura
+            </a>
 
-                    <li>
-                        <a href="about.html">
-                            About Me
-                        </a>
-                    </li>
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="main-nav"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-                    <li>
-                        <a href="projects.html">
-                            Projects
-                        </a>
-                    </li>
+            <nav class="main-nav" id="main-nav" aria-label="Main navigation">
 
-                    <li>
-                        <a href="blog.html">
-                            My Blog
-                        </a>
-                    </li>
+                <a class="active" href="index.html" aria-current="page">
+                    Home
+                </a>
 
-                    <li>
-                        <a href="contact.html">
-                            Contact
-                        </a>
-                    </li>
+                <a href="about.html">
+                    About Me
+                </a>
 
-                </ul>
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="blog.html">
+                    My Blog
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
 
             </nav>
 
+            <div class="social-nav">
 
-            <!-- Social links -->
+                <a
+                    href="https://github.com/tmachingur-code"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
 
-            <div class="sidebar-social">
+                <a
+                    href="https://linkedin.com/in/tsungi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
 
-                <p>Connect with me</p>
+            </div>
 
-                <div class="sidebar-social-links">
+        </div>
+
+    </header>
+
+
+    <main id="main-content">
+
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero-section">
+
+            <div class="hero-container">
+
+                <div class="hero-content reveal">
+
+                    <p class="eyebrow">
+                        SOFTWARE ENGINEERING · AI · DATA
+                    </p>
+
+                    <h1>
+                        Hi, I'm
+                        <span>Tsungirirai<br>Machingura.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I build software, explore artificial intelligence,
+                        and use technology to solve meaningful real-world
+                        problems.
+                    </p>
+
+                    <div class="hero-tags">
+
+                        <span>Software Development</span>
+                        <span>AI &amp; Machine Learning</span>
+                        <span>Data</span>
+                        <span>Backend</span>
+
+                    </div>
+
+                    <div class="hero-actions">
+
+                        <a
+                            class="button button-primary"
+                            href="projects.html"
+                        >
+                            Explore my work
+                            <span>→</span>
+                        </a>
+
+                        <a
+                            class="button button-secondary"
+                            href="about.html"
+                        >
+                            My story
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image reveal">
+
+                    <div class="image-label">
+                        CURRENTLY LEARNING
+                    </div>
+
+                    <img
+                        src="my-pic.png"
+                        alt="Portrait of Tsungirirai Machingura"
+                    >
+
+                    <div class="image-caption">
+                        <span>01</span>
+                        Building. Learning. Improving.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INTRODUCTION
+        ========================== -->
+
+        <section class="intro-section">
+
+            <div class="section-container intro-layout">
+
+                <div class="section-label reveal">
+                    <span>01</span>
+                    ABOUT THE JOURNEY
+                </div>
+
+                <div class="intro-content reveal">
+
+                    <h2>
+                        I believe technology becomes
+                        valuable when it solves problems
+                        that actually matter.
+                    </h2>
+
+                    <p>
+                        I'm interested in the intersection of technology,
+                        learning and real-world problem solving. My journey
+                        is focused on building strong software engineering
+                        foundations while exploring AI, data and backend
+                        development.
+                    </p>
+
+                    <a class="text-link" href="about.html">
+                        Learn more about me
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SELECTED WORK
+        ========================== -->
+
+        <section class="work-section">
+
+            <div class="section-container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <p class="eyebrow">
+                            SELECTED WORK
+                        </p>
+
+                        <h2>
+                            Things I've built
+                        </h2>
+                    </div>
+
+                    <a class="text-link" href="projects.html">
+                        View all projects
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+
+                <div class="project-list">
+
+
+                    <a
+                        class="project-row reveal"
+                        href="projects.html"
+                    >
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <div class="project-info">
+
+                            <p class="project-category">
+                                AI · AGRICULTURE
+                            </p>
+
+                            <h3>
+                                AgriSpark Rwanda
+                            </h3>
+
+                            <p>
+                                AI-powered crop diagnosis designed
+                                to help Rwandan farmers identify
+                                crop diseases and receive useful guidance.
+                            </p>
+
+                        </div>
+
+                        <span class="project-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        class="project-row reveal"
+                        href="projects.html"
+                    >
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <div class="project-info">
+
+                            <p class="project-category">
+                                BACKEND · API
+                            </p>
+
+                            <h3>
+                                Product Inventory API
+                            </h3>
+
+                            <p>
+                                A REST API for managing products
+                                using structured routes, controllers
+                                and models.
+                            </p>
+
+                        </div>
+
+                        <span class="project-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        class="project-row reveal"
+                        href="projects.html"
+                    >
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <div class="project-info">
+
+                            <p class="project-category">
+                                LINUX · AUTOMATION
+                            </p>
+
+                            <h3>
+                                Attendance Tracker Deployment Agent
+                            </h3>
+
+                            <p>
+                                A Bash automation tool for deployment,
+                                configuration and archiving tasks.
+                            </p>
+
+                        </div>
+
+                        <span class="project-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CURRENT FOCUS
+        ========================== -->
+
+        <section class="focus-section">
+
+            <div class="section-container focus-layout">
+
+                <div class="section-label reveal">
+                    <span>02</span>
+                    CURRENTLY LEARNING
+                </div>
+
+                <div class="focus-content reveal">
+
+                    <h2>
+                        Building stronger foundations
+                        while exploring what's next.
+                    </h2>
+
+                    <p>
+                        I'm continuing to strengthen my programming
+                        foundations while exploring artificial intelligence,
+                        machine learning, data analysis and backend development.
+                    </p>
+
+                    <div class="skill-list">
+
+                        <span>Python</span>
+                        <span>AI / ML</span>
+                        <span>Data Analysis</span>
+                        <span>FastAPI</span>
+                        <span>Backend Development</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+
+        <section class="cta-section">
+
+            <div class="section-container cta-content reveal">
+
+                <p class="eyebrow">
+                    LET'S CONNECT
+                </p>
+
+                <h2>
+                    Let's build something
+                    meaningful.
+                </h2>
+
+                <p>
+                    I'm always interested in learning, collaborating
+                    and exploring ideas where technology can create impact.
+                </p>
+
+                <a
+                    class="button button-light"
+                    href="contact.html"
+                >
+                    Start a conversation
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-main">
+
+                <div>
+
+                    <a class="footer-brand" href="index.html">
+                        Tsungirirai Machingura
+                    </a>
+
+                    <p>
+                        Software Engineering student building,
+                        learning and exploring technology with purpose.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Navigate
+                    </h3>
+
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>
+                        Connect
+                    </h3>
 
                     <a
                         href="https://github.com/tmachingur-code"
@@ -104,196 +501,23 @@
 
             </div>
 
-        </aside>
 
-
-        <!-- ==============================
-             MAIN CONTENT
-             ============================== -->
-
-        <main class="main-content">
-
-
-            <!-- Hero -->
-
-            <section class="hero">
-
-                <span class="eyebrow">
-                    Software Engineering • AI • Data
-                </span>
-
-                <h2>
-                    Hi, I'm Tsungirirai Machingura.
-                    <span>I build with technology and purpose.</span>
-                </h2>
+            <div class="footer-bottom">
 
                 <p>
-                    I'm a Software Engineering student at African Leadership
-                    University exploring software development, artificial
-                    intelligence and data-driven solutions to real-world
-                    problems.
+                    &copy; <span class="current-year"></span>
+                    Tsungirirai Machingura.
                 </p>
-
-                <div class="button-group">
-
-                    <a
-                        href="projects.html"
-                        class="button button-primary"
-                    >
-                        Explore My Projects
-                    </a>
-
-                    <a
-                        href="about.html"
-                        class="button button-secondary"
-                    >
-                        More About Me
-                    </a>
-
-                </div>
-
-            </section>
-
-
-            <!-- Highlights -->
-
-            <section class="highlights">
-
-                <article class="highlight-card">
-
-                    <h3>Software Engineering</h3>
-
-                    <p>
-                        Building practical applications and strengthening
-                        my foundations in programming, APIs, Linux and
-                        software development.
-                    </p>
-
-                </article>
-
-
-                <article class="highlight-card">
-
-                    <h3>AI &amp; Data</h3>
-
-                    <p>
-                        Exploring artificial intelligence, machine learning
-                        and data analysis to understand how technology can
-                        support better decisions.
-                    </p>
-
-                </article>
-
-
-                <article class="highlight-card">
-
-                    <h3>Real-World Impact</h3>
-
-                    <p>
-                        Interested in using technology to create solutions
-                        that address meaningful challenges in communities.
-                    </p>
-
-                </article>
-
-            </section>
-
-
-            <!-- Short introduction -->
-
-            <section class="card">
-
-                <span class="eyebrow">
-                    A little about me
-                </span>
-
-                <h3>
-                    Learning, building and growing
-                </h3>
 
                 <p>
-                    My journey in software engineering is shaped by curiosity,
-                    hands-on projects and a desire to keep learning. I enjoy
-                    turning ideas into working solutions and exploring how
-                    technology can be applied beyond the classroom.
+                    Built with HTML, CSS &amp; JavaScript.
                 </p>
 
-                <br>
+            </div>
 
-                <a
-                    href="about.html"
-                    class="read-more"
-                >
-                    Learn more about me →
-                </a>
+        </div>
 
-            </section>
-
-
-            <!-- Current focus -->
-
-            <section class="card">
-
-                <span class="eyebrow">
-                    Currently exploring
-                </span>
-
-                <h3>
-                    What's next?
-                </h3>
-
-                <p>
-                    I'm continuing to strengthen my programming foundations
-                    while exploring AI, machine learning, data analysis and
-                    backend development.
-                </p>
-
-                <br>
-
-                <div class="tags">
-
-                    <span class="tag">Python</span>
-
-                    <span class="tag">AI/ML</span>
-
-                    <span class="tag">Data Analysis</span>
-
-                    <span class="tag">Backend Development</span>
-
-                </div>
-
-            </section>
-
-
-            <!-- Footer -->
-
-            <footer class="footer">
-
-                <div class="footer-links">
-
-                    <a href="index.html">Home</a>
-
-                    <a href="about.html">About</a>
-
-                    <a href="projects.html">Projects</a>
-
-                    <a href="blog.html">Blog</a>
-
-                    <a href="contact.html">Contact</a>
-
-                </div>
-
-                <p>
-                    &copy; 2026 Tsungirirai Machingura.
-                    All rights reserved.
-                </p>
-
-            </footer>
-
-        </main>
-
-    </div>
+    </footer>
 
 </body>
-
 </html>

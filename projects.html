@@ -1,88 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Selected software engineering, AI, backend, Linux and automation projects by Tsungirirai Machingura."
+    >
 
     <title>Projects | Tsungirirai Machingura</title>
 
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
 
-    <div class="site-wrapper">
+    <a class="skip-link" href="#main-content">
+        Skip to content
+    </a>
 
-        <!-- ==============================
-             SIDEBAR
-             ============================== -->
 
-        <aside class="sidebar">
+    <header class="site-header">
 
-            <div class="sidebar-profile">
+        <div class="nav-container">
 
-                <img
-                    src="my-pic.png"
-                    alt="Portrait of Tsungirirai Machingura"
-                    class="profile-image"
+            <a class="brand" href="index.html">
+                Tsungirirai Machingura
+            </a>
+
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="main-nav"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About Me</a>
+
+                <a
+                    class="active"
+                    href="projects.html"
+                    aria-current="page"
                 >
+                    Projects
+                </a>
 
-                <h1>Tsungirirai Machingura</h1>
+                <a href="blog.html">My Blog</a>
 
-                <p>Software Engineering Student</p>
-
-            </div>
-
-
-            <!-- Navigation -->
-
-            <nav class="sidebar-nav" aria-label="Main navigation">
-
-                <ul>
-
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="about.html">
-                            About Me
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="projects.html" class="active">
-                            Projects
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="blog.html">
-                            My Blog
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html">
-                            Contact
-                        </a>
-                    </li>
-
-                </ul>
+                <a href="contact.html">Contact</a>
 
             </nav>
 
+            <div class="social-nav">
 
-            <!-- Social links -->
+                <a
+                    href="https://github.com/tmachingur-code"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
 
-            <div class="sidebar-social">
+                <a
+                    href="https://linkedin.com/in/tsungi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
 
-                <p>Connect with me</p>
+            </div>
 
-                <div class="sidebar-social-links">
+        </div>
+
+    </header>
+
+
+    <main id="main-content">
+
+
+        <section class="page-hero">
+
+            <div class="section-container">
+
+                <p class="eyebrow">
+                    WHAT I'VE BUILT
+                </p>
+
+                <h1>
+                    My projects
+                </h1>
+
+                <p class="page-intro">
+                    A selection of projects where I've applied
+                    programming, problem-solving and technology
+                    to build practical solutions.
+                </p>
+
+                <div class="filter-list">
+
+                    <span>AI &amp; Data</span>
+                    <span>Backend</span>
+                    <span>Linux</span>
+                    <span>Automation</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="projects-section">
+
+            <div class="section-container">
+
+
+                <!-- PROJECT 01 -->
+
+                <article class="large-project reveal">
+
+                    <div class="project-header">
+
+                        <span class="large-project-number">
+                            01
+                        </span>
+
+                        <span class="project-category">
+                            AI · AGRICULTURE
+                        </span>
+
+                    </div>
+
+                    <div class="large-project-body">
+
+                        <div>
+
+                            <h2>
+                                AgriSpark Rwanda
+                            </h2>
+
+                            <p class="project-lead">
+                                An AI-powered crop diagnosis solution
+                                designed to help Rwandan farmers identify
+                                crop diseases and receive guidance on
+                                possible treatments.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <p>
+                                I contributed to mapping 15+ crop disease
+                                patterns, feature prioritisation and the
+                                design of an offline printed guide to support
+                                farmers with limited connectivity.
+                            </p>
+
+                            <div class="tag-list">
+
+                                <span>AI</span>
+                                <span>Machine Learning</span>
+                                <span>Agriculture</span>
+                                <span>UX</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-footer">
+
+                        <span>
+                            FEATURED PROJECT
+                        </span>
+
+                        <span>
+                            01 / 04
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 02 -->
+
+                <article class="large-project reveal">
+
+                    <div class="project-header">
+
+                        <span class="large-project-number">
+                            02
+                        </span>
+
+                        <span class="project-category">
+                            BACKEND · API
+                        </span>
+
+                    </div>
+
+                    <div class="large-project-body">
+
+                        <div>
+
+                            <h2>
+                                Product Inventory API
+                            </h2>
+
+                            <p class="project-lead">
+                                A RESTful API for managing product
+                                inventory through structured routes,
+                                controllers and models.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <p>
+                                The project helped me strengthen my
+                                understanding of backend architecture,
+                                CRUD operations, API testing and
+                                structured application design.
+                            </p>
+
+                            <div class="tag-list">
+
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>JavaScript</span>
+                                <span>REST API</span>
+                                <span>Postman</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-footer">
+
+                        <a
+                            href="https://github.com/tmachingur-code/product-inventory-api"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View on GitHub →
+                        </a>
+
+                        <span>
+                            02 / 04
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 03 -->
+
+                <article class="large-project reveal">
+
+                    <div class="project-header">
+
+                        <span class="large-project-number">
+                            03
+                        </span>
+
+                        <span class="project-category">
+                            LINUX · AUTOMATION
+                        </span>
+
+                    </div>
+
+                    <div class="large-project-body">
+
+                        <div>
+
+                            <h2>
+                                Attendance Tracker Deployment Agent
+                            </h2>
+
+                            <p class="project-lead">
+                                A Bash-based deployment automation tool
+                                for setting up directories, deploying
+                                applications and updating configurations.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <p>
+                                The project includes input validation,
+                                configurable attendance thresholds,
+                                Linux signal handling and automated
+                                archiving for interrupted deployments.
+                            </p>
+
+                            <div class="tag-list">
+
+                                <span>Bash</span>
+                                <span>Linux</span>
+                                <span>Automation</span>
+                                <span>Shell Scripting</span>
+                                <span>tar</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-footer">
+
+                        <a
+                            href="https://github.com/tmachingur-code/deploy_agent_tmachingur-code"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View on GitHub →
+                        </a>
+
+                        <span>
+                            03 / 04
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 04 -->
+
+                <article class="large-project reveal">
+
+                    <div class="project-header">
+
+                        <span class="large-project-number">
+                            04
+                        </span>
+
+                        <span class="project-category">
+                            PYTHON · AUTOMATION
+                        </span>
+
+                    </div>
+
+                    <div class="large-project-body">
+
+                        <div>
+
+                            <h2>
+                                Grade Evaluator &amp; Archiver
+                            </h2>
+
+                            <p class="project-lead">
+                                A Python and Bash tool for validating
+                                grades, calculating weighted scores and
+                                determining academic outcomes.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <p>
+                                The project also creates timestamped
+                                archives, supports new input files
+                                and records operations in a log.
+                            </p>
+
+                            <div class="tag-list">
+
+                                <span>Python</span>
+                                <span>Bash</span>
+                                <span>CSV</span>
+                                <span>Data Validation</span>
+                                <span>Automation</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-footer">
+
+                        <a
+                            href="https://github.com/tmachingur-code/lab1_tmachingur-code"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View on GitHub →
+                        </a>
+
+                        <span>
+                            04 / 04
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <section class="project-philosophy">
+
+            <div class="section-container two-column">
+
+                <div class="section-label reveal">
+                    <span>05</span>
+                    MY APPROACH
+                </div>
+
+                <div class="reveal">
+
+                    <h2>
+                        I learn by building things
+                        that force me to think.
+                    </h2>
+
+                    <p>
+                        My projects are not just about producing a final
+                        result. They are opportunities to understand
+                        systems, solve problems, experiment with tools
+                        and improve how I approach technical challenges.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-main">
+
+                <div>
+
+                    <a class="footer-brand" href="index.html">
+                        Tsungirirai Machingura
+                    </a>
+
+                    <p>
+                        Software Engineering student building,
+                        learning and exploring technology with purpose.
+                    </p>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Navigate</h3>
+
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Connect</h3>
 
                     <a
                         href="https://github.com/tmachingur-code"
@@ -104,318 +516,22 @@
 
             </div>
 
-        </aside>
-
-
-        <!-- ==============================
-             MAIN CONTENT
-             ============================== -->
-
-        <main class="main-content">
-
-
-            <!-- Page Header -->
-
-            <header class="page-header">
-
-                <span class="eyebrow">
-                    What I've built
-                </span>
-
-                <h2>
-                    My Projects
-                </h2>
+            <div class="footer-bottom">
 
                 <p>
-                    A selection of projects where I've applied programming,
-                    problem-solving and technology to build practical
-                    solutions.
+                    &copy; <span class="current-year"></span>
+                    Tsungirirai Machingura.
                 </p>
-
-            </header>
-
-
-            <!-- ==============================
-                 PROJECTS
-                 ============================== -->
-
-            <section class="projects-grid">
-
-
-                <!-- Project 1 -->
-
-                <article class="project-card">
-
-                    <span class="eyebrow">
-                        AI • Agriculture
-                    </span>
-
-                    <h3>
-                        AgriSpark Rwanda
-                    </h3>
-
-                    <p>
-                        An AI-powered crop diagnosis solution designed to
-                        help Rwandan farmers identify crop diseases and
-                        receive guidance on possible treatments.
-                    </p>
-
-                    <p>
-                        I contributed to mapping 15+ crop disease patterns,
-                        feature prioritisation and the design of an offline
-                        printed guide to support farmers with limited
-                        connectivity.
-                    </p>
-
-                    <div class="tags">
-
-                        <span class="tag">AI</span>
-
-                        <span class="tag">Machine Learning</span>
-
-                        <span class="tag">Agriculture</span>
-
-                        <span class="tag">UX</span>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Project 2 -->
-
-                <article class="project-card">
-
-                    <span class="eyebrow">
-                        Backend • API
-                    </span>
-
-                    <h3>
-                        Product Inventory API
-                    </h3>
-
-                    <p>
-                        A RESTful API for managing products through
-                        create, read, update and delete operations.
-                    </p>
-
-                    <p>
-                        The project uses a structured backend architecture
-                        with controllers, models and routes, with API
-                        requests tested using Postman.
-                    </p>
-
-                    <div class="tags">
-
-                        <span class="tag">Node.js</span>
-
-                        <span class="tag">Express.js</span>
-
-                        <span class="tag">JavaScript</span>
-
-                        <span class="tag">REST API</span>
-
-                        <span class="tag">Postman</span>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Project 3 -->
-
-                <article class="project-card">
-
-                    <span class="eyebrow">
-                        Linux • Automation
-                    </span>
-
-                    <h3>
-                        Attendance Tracker Deployment Agent
-                    </h3>
-
-                    <p>
-                        A Bash-based deployment tool that automates
-                        application setup, directory creation, file
-                        deployment and configuration updates.
-                    </p>
-
-                    <p>
-                        It includes input validation, configurable attendance
-                        thresholds, Linux signal handling and automated
-                        archiving for interrupted deployments.
-                    </p>
-
-                    <div class="tags">
-
-                        <span class="tag">Bash</span>
-
-                        <span class="tag">Linux</span>
-
-                        <span class="tag">Automation</span>
-
-                        <span class="tag">Shell Scripting</span>
-
-                        <span class="tag">tar</span>
-
-                    </div>
-
-                    <a
-    href="https://github.com/tmachingur-code/deploy_agent_tmachingur-code"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="read-more"
->
-    View on GitHub →
-</a>
-
-                </article>
-
-
-                <!-- Project 4 -->
-
-                <article class="project-card">
-
-                    <span class="eyebrow">
-                        Python • Data
-                    </span>
-
-                    <h3>
-                        Grade Evaluator &amp; Archiver
-                    </h3>
-
-                    <p>
-                        A Python and Bash tool for validating grades,
-                        calculating weighted scores and GPA, and evaluating
-                        pass or resubmission eligibility.
-                    </p>
-
-                    <p>
-                        The system also creates timestamped archives,
-                        generates new input files and maintains an operation
-                        log for tracking activities.
-                    </p>
-
-                    <div class="tags">
-
-                        <span class="tag">Python</span>
-
-                        <span class="tag">Bash</span>
-
-                        <span class="tag">CSV</span>
-
-                        <span class="tag">Data Validation</span>
-
-                        <span class="tag">Automation</span>
-
-                    </div>
-                    
-                    <a
-    href="https://github.com/tmachingur-code/lab1_tmachingur-code"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="read-more"
->
-    View on GitHub →
-</a>
-
-                </article>
-
-
-            </section>
-
-
-            <!-- ==============================
-                 CURRENT FOCUS
-                 ============================== -->
-
-            <section class="card">
-
-                <span class="eyebrow">
-                    What's next
-                </span>
-
-                <h3>
-                    Currently Exploring
-                </h3>
 
                 <p>
-                    I'm continuing to build projects while exploring areas
-                    that I want to develop further, particularly artificial
-                    intelligence, machine learning, data analysis and
-                    backend development.
+                    Built with HTML, CSS &amp; JavaScript.
                 </p>
 
-                <br>
+            </div>
 
-                <div class="tags">
+        </div>
 
-                    <span class="tag">
-                        Python
-                    </span>
-
-                    <span class="tag">
-                        AI/ML
-                    </span>
-
-                    <span class="tag">
-                        Data Analysis
-                    </span>
-
-                    <span class="tag">
-                        FastAPI
-                    </span>
-
-                    <span class="tag">
-                        Backend Development
-                    </span>
-
-                </div>
-
-            </section>
-
-
-            <!-- ==============================
-                 FOOTER
-                 ============================== -->
-
-            <footer class="footer">
-
-                <div class="footer-links">
-
-                    <a href="index.html">
-                        Home
-                    </a>
-
-                    <a href="about.html">
-                        About
-                    </a>
-
-                    <a href="projects.html">
-                        Projects
-                    </a>
-
-                    <a href="blog.html">
-                        Blog
-                    </a>
-
-                    <a href="contact.html">
-                        Contact
-                    </a>
-
-                </div>
-
-                <p>
-                    &copy; 2026 Tsungirirai Machingura.
-                    All rights reserved.
-                </p>
-
-            </footer>
-
-        </main>
-
-    </div>
+    </footer>
 
 </body>
-
 </html>

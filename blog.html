@@ -1,88 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Read Tsungirirai Machingura's reflections on software engineering, artificial intelligence, learning and technology."
+    >
 
     <title>Blog | Tsungirirai Machingura</title>
 
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
 
-    <div class="site-wrapper">
+    <a class="skip-link" href="#main-content">
+        Skip to content
+    </a>
 
-        <!-- ==============================
-             SIDEBAR
-             ============================== -->
 
-        <aside class="sidebar">
+    <header class="site-header">
 
-            <div class="sidebar-profile">
+        <div class="nav-container">
 
-                <img
-                    src="student-photo.jpg"
-                    alt="Portrait of Tsungirirai Machingura"
-                    class="profile-image"
+            <a class="brand" href="index.html">
+                Tsungirirai Machingura
+            </a>
+
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="main-nav"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About Me</a>
+
+                <a href="projects.html">Projects</a>
+
+                <a
+                    class="active"
+                    href="blog.html"
+                    aria-current="page"
                 >
+                    My Blog
+                </a>
 
-                <h1>Tsungirirai Machingura</h1>
-
-                <p>Software Engineering Student</p>
-
-            </div>
-
-
-            <!-- Navigation -->
-
-            <nav class="sidebar-nav" aria-label="Main navigation">
-
-                <ul>
-
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="about.html">
-                            About Me
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="projects.html">
-                            Projects
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="blog.html" class="active">
-                            My Blog
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html">
-                            Contact
-                        </a>
-                    </li>
-
-                </ul>
+                <a href="contact.html">Contact</a>
 
             </nav>
 
+            <div class="social-nav">
 
-            <!-- Social links -->
+                <a
+                    href="https://github.com/tmachingur-code"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
 
-            <div class="sidebar-social">
+                <a
+                    href="https://linkedin.com/in/tsungi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
 
-                <p>Connect with me</p>
+            </div>
 
-                <div class="sidebar-social-links">
+        </div>
+
+    </header>
+
+
+    <main id="main-content">
+
+
+        <section class="page-hero">
+
+            <div class="section-container">
+
+                <p class="eyebrow">
+                    IDEAS · REFLECTIONS · LEARNING
+                </p>
+
+                <h1>
+                    My blog
+                </h1>
+
+                <p class="page-intro">
+                    A space where I document what I'm learning,
+                    what I'm building and how my thinking about
+                    technology continues to evolve.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="blog-section">
+
+            <div class="section-container">
+
+
+                <article class="featured-post reveal">
+
+                    <div class="post-content">
+
+                        <p class="post-label">
+                            FEATURED · MAY 2026
+                        </p>
+
+                        <p class="post-category">
+                            SOFTWARE ENGINEERING · LEARNING
+                        </p>
+
+                        <h2>
+                            What I'm Learning as a
+                            Software Engineering Student
+                        </h2>
+
+                        <p>
+                            A reflection on my journey as a Software
+                            Engineering student and the lessons I'm
+                            discovering while learning to build software.
+                        </p>
+
+                        <a
+                            class="text-link"
+                            href="https://medium.com/@t.machingur/what-im-learning-as-a-software-engineering-student-6fc7bc041501"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Read the article
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                    <div class="post-index">
+
+                        <span>01</span>
+
+                        <p>
+                            LEARN<br>
+                            BUILD<br>
+                            GROW
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <div class="blog-list">
+
+
+                    <article class="blog-post reveal">
+
+                        <div class="blog-post-number">
+                            02
+                        </div>
+
+                        <div>
+
+                            <p class="post-category">
+                                AI · JUNE 2026
+                            </p>
+
+                            <h2>
+                                Why I'm Exploring
+                                Artificial Intelligence
+                            </h2>
+
+                            <p>
+                                Why AI interests me and what I'm
+                                discovering as I begin exploring
+                                artificial intelligence and machine learning.
+                            </p>
+
+                            <a
+                                class="text-link"
+                                href="https://medium.com/@t.machingur/why-im-exploring-artificial-intelligence-5e127a1f4176"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Read article →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="blog-post reveal">
+
+                        <div class="blog-post-number">
+                            03
+                        </div>
+
+                        <div>
+
+                            <p class="post-category">
+                                PROJECTS · JULY 2026
+                            </p>
+
+                            <h2>
+                                Learning by Building Projects
+                            </h2>
+
+                            <p>
+                                How building projects has changed the
+                                way I understand programming and
+                                problem-solving.
+                            </p>
+
+                            <a
+                                class="text-link"
+                                href="https://medium.com/@t.machingur/learning-by-building-projects-9c57affb447f"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Read article →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="blog-post reveal">
+
+                        <div class="blog-post-number">
+                            04
+                        </div>
+
+                        <div>
+
+                            <p class="post-category">
+                                TECHNOLOGY · AUGUST 2026
+                            </p>
+
+                            <h2>
+                                Technology, Learning and
+                                Real-World Impact
+                            </h2>
+
+                            <p>
+                                Reflections on learning technology
+                                while keeping sight of the people
+                                and problems it should ultimately serve.
+                            </p>
+
+                            <a
+                                class="text-link"
+                                href="https://medium.com/@t.machingur/technology-learning-and-real-world-impact-d2a6914ad813"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Read article →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="coming-soon reveal">
+
+                    <p class="eyebrow">
+                        MORE TO COME
+                    </p>
+
+                    <h2>
+                        I'm still learning,
+                        so there's more to write about.
+                    </h2>
+
+                    <p>
+                        As I continue building projects and exploring
+                        new technologies, I'll keep documenting the
+                        lessons along the way.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-main">
+
+                <div>
+
+                    <a class="footer-brand" href="index.html">
+                        Tsungirirai Machingura
+                    </a>
+
+                    <p>
+                        Software Engineering student building,
+                        learning and exploring technology with purpose.
+                    </p>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Navigate</h3>
+
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Connect</h3>
 
                     <a
                         href="https://github.com/tmachingur-code"
@@ -104,222 +370,22 @@
 
             </div>
 
-        </aside>
-
-
-        <!-- ==============================
-             MAIN CONTENT
-             ============================== -->
-
-        <main class="main-content">
-
-
-            <!-- Page Header -->
-
-            <header class="page-header">
-
-                <span class="eyebrow">
-                    Thoughts &amp; Experiences
-                </span>
-
-                <h2>
-                    My Blog
-                </h2>
+            <div class="footer-bottom">
 
                 <p>
-                    Reflections on learning, building projects and exploring
-                    technology as I grow as a software engineer.
+                    &copy; <span class="current-year"></span>
+                    Tsungirirai Machingura.
                 </p>
-
-            </header>
-
-
-            <!-- ==============================
-                 BLOG POSTS
-                 ============================== -->
-
-            <section class="blog-grid">
-
-
-                <!-- Blog Post 1 -->
-
-                <article class="blog-card">
-
-                    <span class="blog-date">
-                        September 2026
-                    </span>
-
-                    <h3>
-                        What I'm Learning as a Software Engineering Student
-                    </h3>
-
-                    <p>
-                        My experience learning software engineering, building
-                        projects, solving problems and growing through
-                        hands-on practice.
-                    </p>
-
-                    <a
-                        href="#"
-                        class="read-more"
-                    >
-                        Read Article →
-                    </a>
-
-                </article>
-
-
-                <!-- Blog Post 2 -->
-
-                <article class="blog-card">
-
-                    <span class="blog-date">
-                        September 2026
-                    </span>
-
-                    <h3>
-                        Why I'm Exploring Artificial Intelligence
-                    </h3>
-
-                    <p>
-                        Why artificial intelligence interests me and how
-                        I'm beginning to explore AI, machine learning and
-                        data-driven solutions.
-                    </p>
-
-                    <a
-                        href="#"
-                        class="read-more"
-                    >
-                        Read Article →
-                    </a>
-
-                </article>
-
-
-                <!-- Blog Post 3 -->
-
-                <article class="blog-card">
-
-                    <span class="blog-date">
-                        August 2026
-                    </span>
-
-                    <h3>
-                        Learning by Building Projects
-                    </h3>
-
-                    <p>
-                        How practical projects have helped me understand
-                        programming, APIs, Linux and software development
-                        beyond the classroom.
-                    </p>
-
-                    <a
-                        href="#"
-                        class="read-more"
-                    >
-                        Read Article →
-                    </a>
-
-                </article>
-
-
-                <!-- Blog Post 4 -->
-
-                <article class="blog-card">
-
-                    <span class="blog-date">
-                        August 2026
-                    </span>
-
-                    <h3>
-                        Technology, Learning and Real-World Impact
-                    </h3>
-
-                    <p>
-                        Why I believe technology should go beyond technical
-                        achievement and help solve meaningful problems in
-                        people's lives.
-                    </p>
-
-                    <a
-                        href="#"
-                        class="read-more"
-                    >
-                        Read Article →
-                    </a>
-
-                </article>
-
-
-            </section>
-
-
-            <!-- ==============================
-                 COMING SOON
-                 ============================== -->
-
-            <section class="card">
-
-                <span class="eyebrow">
-                    More to come
-                </span>
-
-                <h3>
-                    I'm still writing
-                </h3>
 
                 <p>
-                    This space will grow as I document more of my learning
-                    journey, projects, challenges and discoveries in
-                    technology.
+                    Built with HTML, CSS &amp; JavaScript.
                 </p>
 
-            </section>
+            </div>
 
+        </div>
 
-            <!-- ==============================
-                 FOOTER
-                 ============================== -->
-
-            <footer class="footer">
-
-                <div class="footer-links">
-
-                    <a href="index.html">
-                        Home
-                    </a>
-
-                    <a href="about.html">
-                        About
-                    </a>
-
-                    <a href="projects.html">
-                        Projects
-                    </a>
-
-                    <a href="blog.html">
-                        Blog
-                    </a>
-
-                    <a href="contact.html">
-                        Contact
-                    </a>
-
-                </div>
-
-                <p>
-                    &copy; 2026 Tsungirirai Machingura.
-                    All rights reserved.
-                </p>
-
-            </footer>
-
-        </main>
-
-    </div>
+    </footer>
 
 </body>
-
 </html>

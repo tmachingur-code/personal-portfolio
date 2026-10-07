@@ -1,88 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Contact Tsungirirai Machingura about projects, internships, collaborations, ideas and learning opportunities."
+    >
 
     <title>Contact | Tsungirirai Machingura</title>
 
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
 </head>
 
 <body>
 
-    <div class="site-wrapper">
+    <a class="skip-link" href="#main-content">
+        Skip to content
+    </a>
 
-        <!-- ==============================
-             SIDEBAR
-             ============================== -->
 
-        <aside class="sidebar">
+    <header class="site-header">
 
-            <div class="sidebar-profile">
+        <div class="nav-container">
 
-                <img
-                    src="my-pic.png"
-                    alt="Portrait of Tsungirirai Machingura"
-                    class="profile-image"
+            <a class="brand" href="index.html">
+                Tsungirirai Machingura
+            </a>
+
+            <button
+                class="nav-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="main-nav"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="main-nav">
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About Me</a>
+
+                <a href="projects.html">Projects</a>
+
+                <a href="blog.html">My Blog</a>
+
+                <a
+                    class="active"
+                    href="contact.html"
+                    aria-current="page"
                 >
-
-                <h1>Tsungirirai Machingura</h1>
-
-                <p>Software Engineering Student</p>
-
-            </div>
-
-
-            <!-- Navigation -->
-
-            <nav class="sidebar-nav" aria-label="Main navigation">
-
-                <ul>
-
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="about.html">
-                            About Me
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="projects.html">
-                            Projects
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="blog.html">
-                            My Blog
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html" class="active">
-                            Contact
-                        </a>
-                    </li>
-
-                </ul>
+                    Contact
+                </a>
 
             </nav>
 
+            <div class="social-nav">
 
-            <!-- Social links -->
+                <a
+                    href="https://github.com/tmachingur-code"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
 
-            <div class="sidebar-social">
+                <a
+                    href="https://linkedin.com/in/tsungi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn
+                </a>
 
-                <p>Connect with me</p>
+            </div>
 
-                <div class="sidebar-social-links">
+        </div>
+
+    </header>
+
+
+    <main id="main-content">
+
+
+        <section class="page-hero">
+
+            <div class="section-container">
+
+                <p class="eyebrow">
+                    LET'S CONNECT
+                </p>
+
+                <h1>
+                    Let's start a conversation.
+                </h1>
+
+                <p class="page-intro">
+                    Whether you want to discuss a project, collaboration,
+                    internship, technology or simply exchange ideas,
+                    I'd be happy to hear from you.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="contact-section">
+
+            <div class="section-container contact-grid">
+
+
+                <div class="contact-information reveal">
+
+                    <p class="eyebrow">
+                        01 · CONTACT
+                    </p>
+
+                    <h2>
+                        Find me online.
+                    </h2>
+
+                    <p>
+                        I'm based in Kigali and interested in connecting
+                        with people who are building, learning and working
+                        on meaningful technology.
+                    </p>
+
+
+                    <div class="contact-links">
+
+                        <a
+                            href="https://github.com/tmachingur-code"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <span>
+                                GitHub
+                            </span>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+
+                        <a
+                            href="https://linkedin.com/in/tsungi"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <span>
+                                LinkedIn
+                            </span>
+
+                            <span>
+                                ↗
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                    <div class="contact-note">
+
+                        <strong>
+                            Open to:
+                        </strong>
+
+                        <p>
+                            Projects, internships, collaborations,
+                            learning opportunities and meaningful
+                            conversations about technology.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-form-wrapper reveal">
+
+                    <p class="eyebrow">
+                        02 · MESSAGE
+                    </p>
+
+                    <h2>
+                        Send me a message.
+                    </h2>
+
+                    <form class="contact-form">
+
+                        <div class="form-group">
+
+                            <label for="name">
+                                Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Your name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="your@email.com"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Subject
+                            </label>
+
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="What would you like to discuss?"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="7"
+                                placeholder="Write your message here..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            class="button button-primary"
+                            type="submit"
+                        >
+                            Send message
+                            <span>→</span>
+                        </button>
+
+                        <p
+                            class="form-status"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="contact-cta">
+
+            <div class="section-container reveal">
+
+                <p class="eyebrow">
+                    03 · COLLABORATION
+                </p>
+
+                <h2>
+                    Have an idea worth exploring?
+                </h2>
+
+                <p>
+                    I'm always interested in opportunities to learn,
+                    collaborate and build useful things with other people.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-main">
+
+                <div>
+
+                    <a class="footer-brand" href="index.html">
+                        Tsungirirai Machingura
+                    </a>
+
+                    <p>
+                        Software Engineering student building,
+                        learning and exploring technology with purpose.
+                    </p>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Navigate</h3>
+
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Connect</h3>
 
                     <a
                         href="https://github.com/tmachingur-code"
@@ -104,312 +377,22 @@
 
             </div>
 
-        </aside>
-
-
-        <!-- ==============================
-             MAIN CONTENT
-             ============================== -->
-
-        <main class="main-content">
-
-
-            <!-- Page Header -->
-
-            <header class="page-header">
-
-                <span class="eyebrow">
-                    Let's connect
-                </span>
-
-                <h2>
-                    Contact Me
-                </h2>
+            <div class="footer-bottom">
 
                 <p>
-                    Have a question, an opportunity or an idea you'd like
-                    to discuss? Feel free to get in touch.
+                    &copy; <span class="current-year"></span>
+                    Tsungirirai Machingura.
                 </p>
-
-            </header>
-
-
-            <!-- ==============================
-                 CONTACT CONTENT
-                 ============================== -->
-
-            <section class="contact-grid">
-
-
-                <!-- Contact Information -->
-
-                <article class="card">
-
-                    <span class="eyebrow">
-                        Get in touch
-                    </span>
-
-                    <h3>
-                        Contact Information
-                    </h3>
-
-                    <p>
-                        I'm always interested in connecting with people
-                        who are passionate about technology, learning and
-                        meaningful projects.
-                    </p>
-
-                    <br>
-
-
-                    <div class="contact-details">
-
-                        <!-- Location -->
-
-                        <div class="contact-item">
-
-                            <strong>
-                                Location
-                            </strong>
-
-                            <span>
-                                Kigali, Rwanda
-                            </span>
-
-                        </div>
-
-
-                        <!-- Email -->
-
-                        <div class="contact-item">
-
-                            <strong>
-                                Email
-                            </strong>
-
-                            <a href="mailto:t.machingur@alustudent.com">
-                                t.machingur@alustudent.com
-                            </a>
-
-                        </div>
-
-
-                        <!-- GitHub -->
-
-                        <div class="contact-item">
-
-                            <strong>
-                                GitHub
-                            </strong>
-
-                            <a
-                                href="https://github.com/tmachingur-code"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                github.com/tmachingur-code
-                            </a>
-
-                        </div>
-
-
-                        <!-- LinkedIn -->
-
-                        <div class="contact-item">
-
-                            <strong>
-                                LinkedIn
-                            </strong>
-
-                            <a
-                                href="https://linkedin.com/in/tsungi"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                linkedin.com/in/tsungi
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Contact Form -->
-
-                <article class="card">
-
-                    <span class="eyebrow">
-                        Send a message
-                    </span>
-
-                    <h3>
-                        Let's talk
-                    </h3>
-
-                    <form
-                        class="contact-form"
-                        action="#"
-                        method="post"
-                    >
-
-                        <!-- Name -->
-
-                        <div class="form-group">
-
-                            <label for="name">
-                                Name
-                            </label>
-
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                placeholder="Your name"
-                                required
-                            >
-
-                        </div>
-
-
-                        <!-- Email -->
-
-                        <div class="form-group">
-
-                            <label for="email">
-                                Email
-                            </label>
-
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="your@email.com"
-                                required
-                            >
-
-                        </div>
-
-
-                        <!-- Subject -->
-
-                        <div class="form-group">
-
-                            <label for="subject">
-                                Subject
-                            </label>
-
-                            <input
-                                type="text"
-                                id="subject"
-                                name="subject"
-                                placeholder="What would you like to discuss?"
-                                required
-                            >
-
-                        </div>
-
-
-                        <!-- Message -->
-
-                        <div class="form-group">
-
-                            <label for="message">
-                                Message
-                            </label>
-
-                            <textarea
-                                id="message"
-                                name="message"
-                                placeholder="Write your message here..."
-                                required
-                            ></textarea>
-
-                        </div>
-
-
-                        <!-- Submit -->
-
-                        <button
-                            type="submit"
-                            class="button button-primary"
-                        >
-                            Send Message
-                        </button>
-
-                    </form>
-
-                </article>
-
-            </section>
-
-
-            <!-- ==============================
-                 COLLABORATION
-                 ============================== -->
-
-            <section class="card">
-
-                <span class="eyebrow">
-                    Collaboration
-                </span>
-
-                <h3>
-                    Let's build something meaningful
-                </h3>
 
                 <p>
-                    I'm interested in opportunities that allow me to learn,
-                    collaborate and apply technology to practical problems.
-                    Whether it's a project, a learning opportunity or a
-                    conversation about technology, I'd be happy to connect.
+                    Built with HTML, CSS &amp; JavaScript.
                 </p>
 
-            </section>
+            </div>
 
+        </div>
 
-            <!-- ==============================
-                 FOOTER
-                 ============================== -->
-
-            <footer class="footer">
-
-                <div class="footer-links">
-
-                    <a href="index.html">
-                        Home
-                    </a>
-
-                    <a href="about.html">
-                        About
-                    </a>
-
-                    <a href="projects.html">
-                        Projects
-                    </a>
-
-                    <a href="blog.html">
-                        Blog
-                    </a>
-
-                    <a href="contact.html">
-                        Contact
-                    </a>
-
-                </div>
-
-                <p>
-                    &copy; 2026 Tsungirirai Machingura.
-                    All rights reserved.
-                </p>
-
-            </footer>
-
-        </main>
-
-    </div>
+    </footer>
 
 </body>
-
 </html>
